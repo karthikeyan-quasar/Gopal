@@ -1,0 +1,12 @@
+document.getElementById("donateButton").addEventListener("click", function () {
+
+    const upiID = "divyakarthik2233-1@okhdfcbank";
+    const name = "Gopal in Mysore";
+    const amount = "10";
+    const note = "Donation";
+
+    const upiURL = `upi://pay?pa=${upiID}&pn=${encodeURIComponent(name)}&am=${amount}&cu=INR&tn=${encodeURIComponent(note)}`;
+
+    window.location.href = upiURL;
+
+});
